@@ -420,3 +420,18 @@ iframe.map{ width:100%; height:100%; min-height:360px; border:0; display:block; 
 .promo-close:hover{ background:rgba(0,0,0,.35); }
 @media (max-width:560px){ .promo-bar{ font-size:12.5px; padding:10px 40px 10px 12px; }
   .promo-bar .promo-cta{ display:none; } }
+
+/* ============================================================
+   Popup de promoción (flyer)
+   ============================================================ */
+.promo-modal{ position:fixed; inset:0; z-index:130; background:rgba(0,0,0,.82);
+  display:none; align-items:center; justify-content:center; padding:20px; }
+.promo-modal.open{ display:flex; }
+.promo-modal-card{ position:relative; max-width:440px; width:100%; background:#0d0d0d;
+  border-radius:14px; overflow:hidden; box-shadow:0 24px 70px rgba(0,0,0,.55); }
+.promo-modal-card img{ width:100%; height:auto; display:block; }
+.promo-modal-close{ position:absolute; top:10px; right:10px; z-index:2; width:38px; height:38px;
+  border-radius:50%; background:rgba(0,0,0,.55); color:#fff; border:0; cursor:pointer; font-size:18px;
+  display:flex; align-items:center; justify-content:center; }
+.promo-modal-close:hover{ background:var(--red); }
+.promo-modal-cta{ display:flex; justify-content:center; margin:14px; }
