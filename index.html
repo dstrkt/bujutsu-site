@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bujutsu — BJJ, Muay Thai y MMA en México</title>
+<meta name="description" content="Academia de artes marciales en México: Jiu-Jitsu Brasileño, Muay Thai, MMA, Judo, Wrestling y Boxeo. Primera clase de prueba gratis. Programa de niños.">
+<meta name="theme-color" content="#E11D2A">
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bujutsu — BJJ, Muay Thai y MMA en México">
+<meta property="og:description" content="Entrena con el equipo líder de México. Primera clase gratis.">
+<meta property="og:image" content="assets/img/logo-b.png">
+<!-- TODO: reemplaza con tu dominio real -->
+<meta property="og:url" content="https://www.bujutsubjj.com/">
+
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Datos estructurados para Google (SEO local). TODO: completa dirección, teléfono y horarios reales. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Bujutsu",
+  "description": "Academia de artes marciales: BJJ, Muay Thai, MMA, Judo, Wrestling y Boxeo.",
+  "url": "https://www.bujutsubjj.com/",
+  "image": "https://www.bujutsubjj.com/assets/img/logo-b.png",
+  "telephone": "+52-56-4822-2022",
+  "email": "admin@bujutsubjj.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Topógrafos 7, Escandón II Secc, Miguel Hidalgo",
+    "addressLocality": "Ciudad de México",
+    "postalCode": "11800",
+    "addressRegion": "CDMX",
+    "addressCountry": "MX"
+  },
+  "sameAs": ["https://www.instagram.com/bujutsutv/"],
+  "openingHours": "Mo-Fr 07:00-22:00 Sa 09:00-14:00"
+}
+</script>
+</head>
+<body>
+<!-- Banner promocional -->
+<a class="promo-bar" href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20las%20promociones%20Back%20to%20School" target="_blank" rel="noopener">
+  <span class="promo-tag">🎒 Back to School</span>
+  Mándanos un mensaje al WhatsApp para enterarte de nuestras promociones
+  <span class="promo-cta">Escríbenos →</span>
+  <button class="promo-close" aria-label="Cerrar" onclick="this.parentElement.style.display='none';event.preventDefault();event.stopPropagation();">✕</button>
+</a>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo"><span class="brand-mark"></span><span class="brand-text">Bujutsu</span></a>
+    <nav class="nav-links">
+      <a href="#disciplinas">Clases</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#maestros">Maestros</a>
+      <a href="#ninos">Niños</a>
+      <a href="#precios">Precios</a>
+      <a href="galeria.html">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#prueba" class="btn btn-red desk">Clase gratis</a>
+      <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#disciplinas">Clases</a>
+    <a href="#metodologia">Metodología</a>
+    <a href="#maestros">Maestros</a>
+    <a href="#ninos">Niños</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#precios">Precios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#prueba" class="btn btn-red">Agenda tu clase gratis</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="eyebrow" style="color:#ff5964">BJJ · Muay Thai · MMA · No-Gi</div>
+    <h1>Entrena con el <em>equipo líder</em> de México</h1>
+    <p class="lead">Jiu-Jitsu Brasileño, Muay Thai y MMA con coaches competidores. Primera clase <strong>gratis</strong>, sin compromiso. Ven a probar el tatami.</p>
+    <div class="hero-cta">
+      <a href="#prueba" class="btn btn-red btn-lg">Agenda tu clase gratis</a>
+      <a href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20una%20clase%20de%20prueba%20gratis" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">Principiantes bienvenidos</span>
+      <span class="tag">Horarios AM & PM</span>
+      <span class="tag">Área femenil</span>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div><div class="n">10+</div><div class="l">Años de experiencia</div></div>
+    <div><div class="n">300+</div><div class="l">Alumnos activos</div></div>
+    <div><div class="n">4.9★</div><div class="l">En Google</div></div>
+    <div><div class="n">4</div><div class="l">Disciplinas</div></div>
+  </div>
+</div>
+
+<!-- DISCIPLINAS -->
+<section class="block" id="disciplinas">
+  <div class="wrap">
+    <div class="eyebrow">Nuestras clases</div>
+    <h2 class="sec">Encuentra tu disciplina</h2>
+    <p class="sec-sub">Programas para todos los niveles, desde tu primer día hasta avanzado. Combina grappling y striking.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img"><span class="ic">柔</span><img loading="lazy" alt="Jiu-Jitsu Brasileño" onerror="this.remove()" src="assets/img/disc-bjj.jpg"></div>
+        <div class="card-body"><h3>Jiu-Jitsu (BJJ)</h3><p>Grappling con y sin kimono. Técnica, control y sumisiones para todos los niveles.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">拳</span><img loading="lazy" alt="Muay Thai" onerror="this.remove()" src="assets/img/disc-muaythai.jpg"></div>
+        <div class="card-body"><h3>Muay Thai</h3><p>El arte de las ocho extremidades: puños, codos, rodillas y patadas. Potencia y cardio.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">⚔</span><img loading="lazy" alt="MMA" onerror="this.remove()" src="assets/img/disc-mma.jpg"></div>
+        <div class="card-body"><h3>MMA</h3><p>Integra striking y grappling. Transiciones, clinch y trabajo en el suelo.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">◇</span><img loading="lazy" alt="No-Gi grappling" onerror="this.remove()" src="assets/img/disc-nogi.jpg"></div>
+        <div class="card-body"><h3>No-Gi</h3><p>Grappling sin kimono, ritmo rápido. Ideal para complementar tu BJJ y MMA.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">道</span><img loading="lazy" alt="Judo" onerror="this.remove()" src="assets/img/disc-judo.jpg"></div>
+        <div class="card-body"><h3>Judo</h3><p>Proyecciones y control. Base fundamental del grappling de pie.</p><span class="tbd">Horarios por definir</span></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">⚡</span><img loading="lazy" alt="Wrestling" onerror="this.remove()" src="assets/img/disc-wrestling.jpg"></div>
+        <div class="card-body"><h3>Wrestling</h3><p>Derribos y control de posición. Clave para MMA y grappling.</p><span class="tbd">Horarios por definir</span></div>
+      </div>
+      <div class="card">
+        <div class="card-img"><span class="ic">🥊</span><img loading="lazy" alt="Boxeo" onerror="this.remove()" src="assets/img/disc-boxeo.jpg"></div>
+        <div class="card-body"><h3>Boxeo <span style="font-size:12px;color:var(--muted);font-weight:600">· Box mexicano</span></h3><p>Fundamentos de manos, footwork y defensa. Técnica y acondicionamiento.</p><span class="tbd">Horarios por definir</span></div>
+      </div>
+    </div>
+    <p class="sec-sub" style="margin-top:22px; font-size:13px;">* Judo, Wrestling y Boxeo se muestran ya en la oferta; sus horarios quedan "por definir" hasta asignar maestro.</p>
+  </div>
+</section>
+
+<!-- HORARIOS -->
+<section class="block dark" id="horarios">
+  <div class="wrap">
+    <div class="eyebrow">Horarios</div>
+    <h2 class="sec">Clases toda la semana</h2>
+    <p class="sec-sub">Filtra por disciplina. Horarios de mañana y noche para que entrenes cuando puedas.</p>
+    <div class="sched-tabs">
+      <button class="sched-tab active" data-f="all">Todas</button>
+      <button class="sched-tab" data-f="bjj">BJJ</button>
+      <button class="sched-tab" data-f="mt">Muay Thai</button>
+      <button class="sched-tab" data-f="mma">MMA</button>
+    </div>
+    <div class="grid-week" id="week"></div>
+    <p class="sec-sub" style="margin-top:18px; font-size:13px;">* Horario de ejemplo. Judo, Wrestling, Boxeo y el programa de niños se integran aquí con sus horarios "por definir". Reemplazable por el calendario real.</p>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="block soft" id="precios">
+  <div class="wrap">
+    <div class="eyebrow">Planes</div>
+    <h2 class="sec">Precios claros, sin sorpresas</h2>
+    <p class="sec-sub">Inscripción única de $1,200. Con la promoción anual, <strong>¡solo pagas 10 meses!</strong></p>
+    <div class="plans-duo">
+      <div class="plan">
+        <h3>1 Disciplina <span class="pl-sub">BJJ / Grappling o Striking</span></h3>
+        <div class="price">$1,400<small>/mes</small></div>
+        <ul>
+          <li>Promo 6 meses: $7,000</li>
+          <li>Promo 1 año: $14,000</li>
+          <li>Inscripción única: $1,200</li>
+        </ul>
+        <div class="pl-promo">¡Solo pagas 10 meses!</div>
+        <a href="#prueba" class="btn btn-dark">Empezar</a>
+      </div>
+      <div class="plan featured">
+        <div class="badge">Más popular</div>
+        <h3>2 Disciplinas <span class="pl-sub">BJJ / Grappling + Striking</span></h3>
+        <div class="price">$1,700<small>/mes</small></div>
+        <ul>
+          <li>Promo 6 meses: $8,500</li>
+          <li>Promo 1 año: $17,000</li>
+          <li>Inscripción única: $1,200</li>
+        </ul>
+        <div class="pl-promo">¡Solo pagas 10 meses!</div>
+        <a href="#prueba" class="btn btn-red">Elegir plan</a>
+      </div>
+    </div>
+    <div class="plans-extra">
+      <div class="plan">
+        <h3>Infantil <span class="pl-sub">Programa Bujutsu Kids</span></h3>
+        <ul class="pl-list">
+          <li><span>1 clase/semana · 1 disciplina</span><b>$800</b></li>
+          <li><span>2+ clases/semana · 1 disciplina</span><b>$1,200</b></li>
+          <li><span>Todas las clases · 2 disciplinas</span><b>$1,500</b></li>
+        </ul>
+        <a href="#prueba" class="btn btn-dark">Info infantil</a>
+      </div>
+      <div class="plan">
+        <h3>Visitas <span class="pl-sub">Sin inscripción</span></h3>
+        <ul class="pl-list">
+          <li><span>Clase suelta</span><b>$200</b></li>
+          <li><span>Semana</span><b>$700</b></li>
+          <li><span>Quincena</span><b>$1,200</b></li>
+        </ul>
+        <a href="#prueba" class="btn btn-dark">Reservar visita</a>
+      </div>
+    </div>
+    <p class="price-note">Al inscribirte eliges tu fecha de corte para el cobro automático (domiciliado). ¿Dudas sobre planes o promociones? <a href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20precios" target="_blank" rel="noopener" style="color:var(--red); font-weight:700;">Escríbenos por WhatsApp</a>.</p>
+  </div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section class="block dark" id="metodologia">
+  <div class="wrap">
+    <div class="eyebrow">Nuestra escuela</div>
+    <h2 class="sec">Una academia, no un gimnasio</h2>
+    <p class="sec-sub">Enseñamos con método y currículo, como una escuela. Programa estructurado, progreso medible por grados y maestros con formación académica. Eso nos separa de un gimnasio más.</p>
+    <div class="method-grid">
+      <div class="method-item"><div class="k">01</div><h3>Currículo estructurado</h3><p>Un plan de estudios por nivel: cada clase construye sobre la anterior, no es entrenamiento suelto. (Texto de ejemplo.)</p></div>
+      <div class="method-item"><div class="k">02</div><h3>Progreso por grados</h3><p>Sistema de cintas con evaluación clara. El alumno sabe dónde está y qué sigue. (Texto de ejemplo.)</p></div>
+      <div class="method-item"><div class="k">03</div><h3>Base técnica y científica</h3><p>Enfoque en fundamentos, biomecánica y seguridad. Enseñamos el porqué, no solo el cómo. (Texto de ejemplo.)</p></div>
+    </div>
+    <div class="belts-wrap">
+      <div class="cap">Sistema de grados · adultos (ejemplo)</div>
+      <div class="belts">
+        <div class="belt"><div class="bar" style="background:#f2f2f2"></div><div class="lbl">Blanca</div></div>
+        <div class="belt"><div class="bar" style="background:#1f57c3"></div><div class="lbl">Azul</div></div>
+        <div class="belt"><div class="bar" style="background:#6b2fb3"></div><div class="lbl">Morada</div></div>
+        <div class="belt"><div class="bar" style="background:#6b3f1d"></div><div class="lbl">Café</div></div>
+        <div class="belt"><div class="bar" style="background:#111"></div><div class="lbl">Negra</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAESTROS / FACULTAD -->
+<section class="block" id="maestros">
+  <div class="wrap">
+    <div class="eyebrow">La facultad</div>
+    <h2 class="sec">Nuestros maestros</h2>
+    <p class="sec-sub">Como en una gran escuela, cada maestro tiene su perfil, su trayectoria y su especialidad. Un cuerpo docente con credenciales que respaldan la enseñanza.</p>
+    <div class="faculty-note">🎓 Linaje y formación documentados · <b>perfiles y palmarés de ejemplo</b>, a completar por el equipo.</div>
+    <div class="team">
+      <div class="coach">
+        <div class="ph gold" data-init="AS"></div>
+        <div class="info"><h3>Alan S.</h3><div class="role">Maestro · Head Instructor & Grappling</div>
+          <ul class="palmares"><li>Campeón mundial de Masters (ejemplo)</li><li>#1 del ranking dos años consecutivos (ejemplo)</li><li>Cinturón negro (ejemplo)</li></ul></div>
+      </div>
+      <div class="coach">
+        <div class="ph gold" data-init="AB"></div>
+        <div class="info"><h3>Andrés B.</h3><div class="role">Maestro · BJJ</div>
+          <ul class="palmares"><li>Campeón mundial en todas las cintas (ejemplo)</li><li>Instructor certificado (ejemplo)</li><li>+10 años de docencia (ejemplo)</li></ul></div>
+      </div>
+      <div class="coach">
+        <div class="ph gold" data-init="FT"></div>
+        <div class="info"><h3>Fausto T.</h3><div class="role">Maestro · Director</div>
+          <ul class="palmares"><li>Coach de la Selección Mexicana (ejemplo)</li><li>Cinturón negro (ejemplo)</li><li>Formación de competidores (ejemplo)</li></ul></div>
+      </div>
+      <div class="coach">
+        <div class="ph" data-init="LM"></div>
+        <div class="info"><h3>Luis M.</h3><div class="role">Maestro · Muay Thai</div>
+          <ul class="palmares"><li>Kru certificado (ejemplo)</li><li>Especialista en striking (ejemplo)</li><li>Pad work y acondicionamiento (ejemplo)</li></ul></div>
+      </div>
+      <div class="coach">
+        <div class="ph" data-init="GA"></div>
+        <div class="info"><h3>Gabriela</h3><div class="role">Maestra · Programa Infantil (Niños)</div>
+          <ul class="palmares"><li>Responsable de Bujutsu Kids (ejemplo)</li><li>Especialista en enseñanza infantil (ejemplo)</li><li>Instructora certificada (ejemplo)</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NIÑOS -->
+<section class="block soft" id="ninos">
+  <div class="wrap">
+    <div class="eyebrow">Programa infantil</div>
+    <h2 class="sec">Bujutsu Kids</h2>
+    <p class="sec-sub">Uno de nuestros pilares. Formamos a los niños con disciplina, valores y defensa personal, con su propio sistema de cintas infantiles.</p>
+    <div class="kids-grid">
+      <div class="kids-photo">
+        <span class="ic">🥋</span>
+        <img src="assets/img/kids.jpg" alt="Programa infantil Bujutsu Kids" onerror="this.remove()">
+      </div>
+      <div>
+        <div class="ages">
+          <div class="age"><b>4–6</b><span>Mini</span></div>
+          <div class="age"><b>7–9</b><span>Infantil</span></div>
+          <div class="age"><b>10–13</b><span>Juvenil</span></div>
+        </div>
+        <ul class="kids-benefits">
+          <li>Sistema de cintas infantiles (blanca a verde) — ejemplo</li>
+          <li>Disciplina, respeto y valores dentro y fuera del tatami</li>
+          <li>Defensa personal y prevención de bullying</li>
+          <li>Coordinación, fuerza y confianza</li>
+        </ul>
+        <a href="#prueba" class="btn btn-red">Agenda clase de prueba infantil</a>
+        <p class="sec-sub" style="margin-top:16px; font-size:13px;">* Edades, cintas y horarios de ejemplo — a definir por el equipo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="block dark" id="resenas">
+  <div class="wrap">
+    <div class="eyebrow">Lo que dicen</div>
+    <h2 class="sec">Reseñas de alumnos</h2>
+    <span class="g-badge"><b>4.9</b><span class="stars">★★★★★</span> · 120+ reseñas en Google</span>
+    <div class="reviews">
+      <div class="review"><div class="stars">★★★★★</div>
+        <p>“El mejor ambiente para empezar. Me sentí bienvenido desde el primer día y los coaches corrigen técnica de verdad.”</p>
+        <div class="reviewer"><div class="avatar">D</div><div><div class="who">Daniel R.</div><div class="sub">Alumno de BJJ</div></div></div></div>
+      <div class="review"><div class="stars">★★★★★</div>
+        <p>“Muy buen nivel de Muay Thai y las instalaciones están limpias. La clase de prueba gratis me convenció.”</p>
+        <div class="reviewer"><div class="avatar">M</div><div><div class="who">Mariana L.</div><div class="sub">Alumna de Muay Thai</div></div></div></div>
+      <div class="review"><div class="stars">★★★★★</div>
+        <p>“Entreno MMA aquí desde hace un año. Comunidad increíble y coaches que sí compiten. 100% recomendado.”</p>
+        <div class="reviewer"><div class="avatar">J</div><div><div class="who">Jorge M.</div><div class="sub">Alumno de MMA</div></div></div></div>
+    </div>
+    <p class="sec-sub" style="margin-top:22px; font-size:13px;">* Reseñas de ejemplo. Se conectarían con las reseñas reales de Google Business Profile.</p>
+  </div>
+</section>
+
+<!-- GALERÍA / INSTAGRAM -->
+<section class="block" id="galeria">
+  <div class="wrap">
+    <div class="eyebrow">En el tatami</div>
+    <h2 class="sec">Síguenos en Instagram</h2>
+    <div class="ig-head">
+      <a class="ig-handle" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener">
+        <span class="dot"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+        Síguenos en <b>@bujutsutv</b>
+      </a>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn btn-dark" href="galeria.html">Ver galería de fotos</a>
+        <a class="btn btn-red" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener">Ver Instagram</a>
+      </div>
+    </div>
+    <div class="gallery">
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-1.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-2.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-3.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-4.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-5.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-6.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-7.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+      <a class="gtile" href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener"><span class="igmark"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><img loading="lazy" alt="" onerror="this.remove()" src="assets/img/gallery-8.jpg"><span class="ov"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span></a>
+    </div>
+    <p class="sec-sub" style="margin-top:20px; font-size:13px;">* Galería de ejemplo. Se conecta al feed real de <a href="https://www.instagram.com/bujutsutv/" target="_blank" rel="noopener" style="color:var(--red);font-weight:700">@bujutsutv</a> con un widget de Instagram (se actualiza solo con cada publicación).</p>
+  </div>
+</section>
+
+<!-- UBICACION -->
+<section class="block soft" id="ubicacion">
+  <div class="wrap">
+    <div class="eyebrow">Visítanos</div>
+    <h2 class="sec">Dónde entrenamos</h2>
+    <p class="sec-sub">Estamos en el corazón de la ciudad, con fácil acceso. Ven a conocer el tatami.</p>
+    <div class="loc">
+      <iframe class="map" title="Ubicación Bujutsu Central" loading="lazy" allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2713309683622!2d-99.17329632433189!3d19.40067918187197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff975c600a27%3A0x8088910f077c2222!2sBujutsu%20Central!5e0!3m2!1sen!2smx!4v1787595652034!5m2!1sen!2smx"></iframe>
+      <div class="info">
+        <h3>Academia Bujutsu</h3>
+        <div class="row"><b>Dirección</b><span>Topógrafos 7, Escandón II Secc, Miguel Hidalgo, 11800 CDMX</span></div>
+        <div class="row"><b>Horario</b><span>Lun–Vie 7:00–22:00 · Sáb 9:00–14:00</span></div>
+        <div class="row"><b>Teléfono</b><span><a href="tel:+525648222022" style="color:inherit">+52 56 4822 2022</a></span></div>
+        <div class="row"><b>Correo</b><span><a href="mailto:admin@bujutsubjj.com" style="color:inherit">admin@bujutsubjj.com</a></span></div>
+        <a href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20una%20clase%20de%20prueba%20gratis" class="btn btn-red" target="_blank" rel="noopener">Cómo llegar / WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL / FORM -->
+<section class="block cta-final" id="prueba">
+  <div class="wrap cta-grid">
+    <div>
+      <h2>Tu primera clase<br>es <span style="color:var(--red)">gratis</span></h2>
+      <p>Déjanos tus datos y te contactamos para agendar. Sin compromiso, sin tarjeta. Solo trae ropa cómoda y ganas de entrenar.</p>
+    </div>
+    <div class="form-card">
+      <h3>Agenda tu clase de prueba</h3>
+      <div class="fsub">Te escribimos por WhatsApp el mismo día.</div>
+      <!-- Formulario conectado a Formspree (envío AJAX, sin salir de la página) -->
+      <form id="lead-form" action="https://formspree.io/f/xdenraaq" method="POST">
+        <input type="hidden" name="_subject" value="Nueva solicitud de clase de prueba — Bujutsu">
+        <div class="field"><label>Nombre</label><input type="text" name="nombre" required placeholder="Tu nombre"></div>
+        <div class="field"><label>WhatsApp / Teléfono</label><input type="tel" name="telefono" required placeholder="55 1234 5678"></div>
+        <div class="field"><label>Correo (opcional)</label><input type="email" name="email" placeholder="tu@correo.com"></div>
+        <div class="field"><label>Disciplina de interés</label>
+          <select name="disciplina"><option>BJJ</option><option>Muay Thai</option><option>MMA</option><option>No-Gi</option><option>Aún no sé</option></select>
+        </div>
+        <button type="submit" class="btn btn-red">Quiero mi clase gratis</button>
+        <div class="form-note">Al enviar aceptas ser contactado por WhatsApp o teléfono.</div>
+        <div id="form-status" class="form-status" role="status" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo"><span class="brand-mark"></span><span class="brand-text">Bujutsu</span></div>
+        <p style="font-size:14px; max-width:34ch;">Academia de artes marciales en México. BJJ, Muay Thai y MMA para todos los niveles.</p>
+        <div class="socials" style="margin-top:16px;">
+          <a href="#" title="Instagram">IG</a>
+          <a href="#" title="TikTok">TT</a>
+          <a href="#" title="YouTube">YT</a>
+          <a href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20una%20clase%20de%20prueba%20gratis" target="_blank" rel="noopener" title="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div><h4>Clases</h4><a href="#disciplinas">BJJ · No-Gi</a><a href="#disciplinas">Muay Thai · MMA</a><a href="#disciplinas">Judo · Wrestling</a><a href="#disciplinas">Boxeo</a><a href="#ninos">Niños</a></div>
+      <div><h4>Escuela</h4><a href="#metodologia">Metodología</a><a href="#maestros">Maestros</a><a href="galeria.html">Galería</a><a href="#horarios">Horarios</a><a href="#precios">Precios</a></div>
+      <div><h4>Contacto</h4>
+        <a href="https://maps.google.com/?q=Bujutsu+Central" target="_blank" rel="noopener">Topógrafos 7, Escandón, CDMX</a>
+        <a href="tel:+525648222022">+52 56 4822 2022</a>
+        <a href="mailto:admin@bujutsubjj.com">admin@bujutsubjj.com</a>
+        <a href="#prueba" class="btn btn-red" style="display:inline-flex; margin-top:12px;">Clase gratis</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Bujutsu · Mockup de propuesta. Entrena con el equipo líder de México.</span>
+      <span>Diseño responsivo · Escritorio & Móvil</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/525648222022?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20una%20clase%20de%20prueba%20gratis" class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.2 10.2 0 01-1.6-5.5C5.5 9.9 10.2 5.2 16 5.2S26.5 9.9 26.5 15.5 21.8 25.7 16 25.7zm5.8-7.6c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

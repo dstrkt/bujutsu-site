@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# TODO: reemplaza el dominio por el real
+Sitemap: https://www.bujutsubjj.com/sitemap.xml
