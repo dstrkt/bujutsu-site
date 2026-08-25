@@ -1,7 +1,6 @@
 /* ============================================================
    BUJUTSU — JavaScript del sitio
-   1) Menu movil (hamburguesa)  2) Horarios filtrables
-   Edita el objeto CLASSES para cambiar el horario real.
+   Menú móvil · formulario (Formspree) · popup de promoción
    ============================================================ */
 
 // mobile menu
@@ -10,36 +9,6 @@ const mm = document.getElementById('mobileMenu');
 burger.addEventListener('click', ()=> mm.classList.toggle('open'));
 mm.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mm.classList.remove('open')));
 
-
-// horarios data
-const CLASSES = {
-  Lun:[['07:00','BJJ','bjj'],['18:00','Muay Thai','mt'],['20:00','MMA','mma']],
-  Mar:[['07:00','Muay Thai','mt'],['18:00','BJJ','bjj'],['20:00','No-Gi','bjj']],
-  Mié:[['07:00','BJJ','bjj'],['18:00','MMA','mma'],['20:00','Muay Thai','mt']],
-  Jue:[['07:00','Muay Thai','mt'],['18:00','BJJ','bjj'],['20:00','MMA','mma']],
-  Vie:[['07:00','BJJ','bjj'],['18:00','Muay Thai','mt'],['19:30','Open Mat','bjj']],
-  Sáb:[['09:00','BJJ','bjj'],['10:30','Muay Thai','mt'],['12:00','Femenil','mma']],
-  Dom:[['12:00','Open Mat','bjj']],
-};
-const week = document.getElementById('week');
-function renderWeek(filter){
-  week.innerHTML='';
-  Object.entries(CLASSES).forEach(([day,slots])=>{
-    const col=document.createElement('div'); col.className='day';
-    col.innerHTML='<h4>'+day+'</h4>';
-    slots.filter(s=> filter==='all'||s[2]===filter).forEach(s=>{
-      col.innerHTML+='<div class="slot"><div class="t">'+s[0]+'</div><div class="d">'+s[1]+'</div></div>';
-    });
-    week.appendChild(col);
-  });
-}
-renderWeek('all');
-document.querySelectorAll('.sched-tab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.sched-tab').forEach(t=>t.classList.remove('active'));
-    tab.classList.add('active'); renderWeek(tab.dataset.f);
-  });
-});
 
 
 // ---- Formulario de clase de prueba (envío AJAX a Formspree) ----
