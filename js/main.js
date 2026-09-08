@@ -52,20 +52,3 @@ mm.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mm.classLi
   });
 })();
 
-
-// ---- Popup de promoción (flyer) ----
-(function () {
-  const m = document.getElementById('promoModal');
-  if (!m) return;
-  const closeBtn = document.getElementById('promoClose');
-  let dismissed = false;
-  try { dismissed = sessionStorage.getItem('promoClosed') === '1'; } catch (e) {}
-  if (!dismissed) { setTimeout(() => m.classList.add('open'), 900); }
-  function hide() {
-    m.classList.remove('open');
-    try { sessionStorage.setItem('promoClosed', '1'); } catch (e) {}
-  }
-  closeBtn.addEventListener('click', hide);
-  m.addEventListener('click', e => { if (e.target === m) hide(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') hide(); });
-})();

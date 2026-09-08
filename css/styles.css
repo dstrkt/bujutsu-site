@@ -143,11 +143,20 @@ section.dark .card p{ color:#a9a9a9; }
   font-weight:700; font-size:13px; letter-spacing:.5px; cursor:pointer; text-transform:uppercase; }
 .sched-tab.active{ background:var(--red); border-color:var(--red); color:#fff; }
 .grid-week{ display:grid; grid-template-columns:repeat(7,1fr); gap:10px; }
+.grid-week.cols-5{ grid-template-columns:repeat(5,1fr); }
 .day{ background:#151515; border:1px solid #232323; border-radius:10px; padding:14px 12px; min-height:120px; }
 .day h4{ font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#9a9a9a; margin-bottom:10px; }
 .slot{ background:#1f1f1f; border-left:3px solid var(--red); border-radius:5px; padding:7px 9px; margin-bottom:7px; }
 .slot .t{ font-weight:800; font-size:13px; }
 .slot .d{ font-size:11px; color:#9a9a9a; text-transform:uppercase; letter-spacing:.5px; }
+.slot-baja{ border-left-color:#4caf7d; }
+.slot-media{ border-left-color:#e0a040; }
+.slot-alta{ border-left-color:var(--red); }
+.sched-legend{ display:flex; gap:18px; flex-wrap:wrap; margin-bottom:26px; font-size:12px; color:#bbb; }
+.sched-legend span{ display:inline-flex; align-items:center; gap:6px; }
+.sched-legend i{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+.sched-sub{ font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#9a9a9a; font-weight:800; margin:34px 0 14px; }
+.sched-sub:first-of-type{ margin-top:6px; }
 
 /* precios */
 .plans{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; align-items:stretch; }
@@ -340,6 +349,7 @@ section.dark .maestro .palmares li{ color:#a9a9a9; }
   .loc{ grid-template-columns:1fr; }
   .cta-grid{ grid-template-columns:1fr; gap:26px; }
   .grid-week{ grid-template-columns:repeat(2,1fr); }
+  .grid-week.cols-5{ grid-template-columns:repeat(2,1fr); }
   .ft-grid{ grid-template-columns:1fr 1fr; }
 }
 @media (max-width: 720px){
@@ -356,6 +366,7 @@ section.dark .maestro .palmares li{ color:#a9a9a9; }
   .gallery{ grid-template-columns:repeat(2,1fr); }
   .ig-head{ flex-direction:column; align-items:flex-start; gap:12px; }
   .grid-week{ grid-template-columns:1fr; }
+  .grid-week.cols-5{ grid-template-columns:1fr; }
   .ft-grid{ grid-template-columns:1fr; }
   section.block{ padding:54px 0; }
   .hero-inner{ padding:64px 0; }
