@@ -52,3 +52,14 @@ mm.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mm.classLi
   });
 })();
 
+
+// ---- Recorrido del dojo: flechas del carrusel ----
+(function () {
+  const track = document.getElementById('track');
+  if (!track) return;
+  document.querySelectorAll('.tour-nav button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      track.scrollBy({ left: Number(b.dataset.dir) * track.clientWidth * 0.7, behavior: 'smooth' });
+    });
+  });
+})();
