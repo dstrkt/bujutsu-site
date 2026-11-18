@@ -63,3 +63,47 @@ mm.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mm.classLi
     });
   });
 })();
+
+// ---- Horarios en móvil: pestañas por día (mañana + tarde juntas) ----
+(function () {
+  const subs = document.querySelectorAll('#horarios .sched-sub');
+  if (!subs.length) return;
+  const ORDER = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+  const SHORT = { 'Lunes':'Lun','Martes':'Mar','Miércoles':'Mié','Jueves':'Jue','Viernes':'Vie','Sábado':'Sáb','Domingo':'Dom' };
+  const data = {}; // { dia: [{turno, slotsHTML}] }
+  subs.forEach(function (sub) {
+    const grid = sub.nextElementSibling;
+    if (!grid || !grid.classList.contains('grid-week')) return;
+    const turno = sub.textContent.replace('Horario', '').trim();
+    grid.querySelectorAll('.day').forEach(function (d) {
+      const name = d.querySelector('h4').textContent.trim();
+      const slots = Array.from(d.querySelectorAll('.slot')).map(s => s.outerHTML).join('');
+      (data[name] = data[name] || []).push({ turno: turno, html: slots });
+    });
+  });
+  const days = ORDER.filter(d => data[d]);
+  const wrap = document.createElement('div');
+  wrap.className = 'sched-mobile';
+  wrap.innerHTML = '<div class="day-tabs" role="tablist"></div><div class="day-panel" aria-live="polite"></div>';
+  subs[0].parentNode.insertBefore(wrap, subs[0]);
+  const tabs = wrap.querySelector('.day-tabs'), panel = wrap.querySelector('.day-panel');
+  function show(day) {
+    tabs.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.day === day));
+    panel.innerHTML = data[day].map(t => '<h5>' + t.turno + '</h5>' + (t.html || '<p class="empty">Sin clases</p>')).join('');
+  }
+  days.forEach(function (d) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.textContent = SHORT[d] || d; b.dataset.day = d;
+    b.addEventListener('click', () => show(d));
+    tabs.appendChild(b);
+  });
+  const today = ORDER[(new Date().getDay() + 6) % 7];
+  show(data[today] ? today : days[0]);
+})();
+
+// ---- Barra fija móvil: se oculta cuando el formulario está a la vista ----
+(function () {
+  const bar = document.getElementById('mBar'), form = document.getElementById('prueba');
+  if (!bar || !form || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function (e) { bar.classList.toggle('hide', e[0].isIntersecting); }, { threshold: 0.15 }).observe(form);
+})();

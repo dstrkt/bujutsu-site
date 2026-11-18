@@ -352,3 +352,86 @@ footer.ft{ background:var(--black); color:#8F8B82; padding:70px 0 30px; border-t
 /* Botón dentro de la tarjeta del formulario (fondo claro sobre sección oscura) */
 .on-dark .form-card .btn-solid{ background:var(--black); color:var(--white); border-color:var(--black); }
 .on-dark .form-card .btn-solid:hover{ background:transparent; color:var(--black); }
+
+/* ============================================================
+   MÓVIL LIGERO (≤720px): menos imágenes, menos scroll
+   ============================================================ */
+.m-cap,.swipe-hint,.m-bar,.sched-mobile{ display:none; }
+
+@media (max-width:720px){
+  section.block,.tour{ padding:60px 0; }
+  h2.sec{ font-size:34px; }
+  .sec-sub{ margin-bottom:28px; font-size:15px; }
+  .head{ margin-bottom:28px; }
+
+  /* 4) Hero más bajo, formato horizontal */
+  .hero-copy{ padding:44px 24px 36px; }
+  .hero-img{ aspect-ratio:16/10; }
+  .hero-tags{ display:none; }
+
+  /* Renovación en 2 columnas compactas */
+  .pillars{ grid-template-columns:repeat(2,1fr); }
+  .pillar,.pillar + .pillar{ padding:20px 14px 18px 0; border-left:0; }
+  .pillar:nth-child(even){ padding-left:14px; border-left:1px solid var(--line); }
+  .pillar h3{ font-size:22px; margin:8px 0 6px; }
+  .pillar p{ font-size:13px; }
+
+  /* 2) Espacios: se ocultan (las fotos ya están en el recorrido) */
+  #espacios{ display:none; }
+  .frame{ width:78vw; }
+  .frame img{ width:100%; height:auto; max-height:none; }
+  .m-cap{ display:block; padding-top:12px; font-size:13px; color:var(--text); line-height:1.45; }
+  .m-cap b{ display:block; font-size:10px; font-weight:600; letter-spacing:.24em; text-transform:uppercase; color:var(--camel-dk); margin-bottom:4px; }
+  .tour-nav{ display:none; }
+
+  /* 1) Horarios: un día a la vez */
+  .sched-sub,.grid-week{ display:none; }
+  .sched-mobile{ display:block; }
+  .day-tabs{ display:flex; gap:6px; overflow-x:auto; padding-bottom:6px; margin-bottom:18px; scrollbar-width:none; }
+  .day-tabs::-webkit-scrollbar{ display:none; }
+  .day-tabs button{ flex:0 0 auto; background:transparent; color:var(--dojo); border:1px solid #444; padding:10px 14px; font:600 11px var(--sans); letter-spacing:.18em; text-transform:uppercase; cursor:pointer; }
+  .day-tabs button.active{ background:var(--dojo); color:var(--black); border-color:var(--dojo); }
+  .day-panel h5{ font-size:10px; font-weight:600; letter-spacing:.3em; text-transform:uppercase; color:var(--camel); margin:16px 0 10px; }
+  .day-panel h5:first-child{ margin-top:0; }
+  .day-panel .empty{ font-size:13px; color:#8F8B82; }
+  .sched-legend{ gap:14px; margin-bottom:20px; }
+
+  /* 3) Carruseles deslizables: precios, maestros, reseñas */
+  .swipe-hint{ display:block; font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--camel-dk); margin:-10px 0 14px; }
+  section.dark .swipe-hint{ color:var(--camel); }
+  .plans,.team,.reviews{ display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; scrollbar-width:none; border:0; background:transparent;
+    margin:0 -24px; padding:0 24px 6px; scroll-padding-left:24px; }
+  .plans::-webkit-scrollbar,.team::-webkit-scrollbar,.reviews::-webkit-scrollbar{ display:none; }
+  .plan,.coach,.review,.coach + .coach,.review + .review{ flex:0 0 82%; scroll-snap-align:start; border:1px solid var(--line); }
+  .plan{ background:var(--white); padding:30px 24px; }
+  .plan.featured{ background:var(--black); border-color:var(--black); }
+  .price{ font-size:44px; margin:18px 0 16px; }
+  .coach,.coach + .coach{ padding:24px 20px; background:var(--white); }
+  .review,.review + .review{ padding:24px 20px; border-color:var(--line-dk); }
+  .review p{ font-size:18px; }
+
+  /* Metodología más compacta */
+  .method-item,.method-item + .method-item{ padding:18px 0; }
+  .method-item h3{ font-size:22px; margin:6px 0 4px; }
+  .belts-wrap{ margin-top:36px; }
+
+  /* 4) Kids sin foto, galería con 4 fotos, mapa corto */
+  .kids-photo{ display:none; }
+  .kids-benefits li{ padding:8px 0; font-size:14px; }
+  .gallery .gtile:nth-child(n+5){ display:none; }
+  .ig-head{ margin-bottom:18px; }
+  .loc .map{ min-height:220px; height:220px; }
+  .loc .info{ padding:26px 22px; }
+
+  /* Footer compacto */
+  .ft-grid > div:nth-child(2),.ft-grid > div:nth-child(3){ display:none; }
+  footer.ft{ padding:48px 0 96px; }
+
+  /* 5) Barra fija inferior (reemplaza al botón flotante) */
+  .wa-fab{ display:none; }
+  .m-bar{ display:grid; grid-template-columns:1.3fr 1fr; gap:8px; position:fixed; left:0; right:0; bottom:0; z-index:90;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom)); background:rgba(244,242,236,.96); backdrop-filter:blur(8px);
+    border-top:1px solid var(--line); transition:transform .25s ease; }
+  .m-bar .btn{ padding:14px 10px; font-size:11px; }
+  .m-bar.hide{ transform:translateY(110%); }
+}
