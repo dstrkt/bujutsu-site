@@ -130,3 +130,14 @@ En todos los casos, el archivo de inicio es `index.html` en la raíz.
 - No hay dependencias ni `node_modules`: es HTML/CSS/JS plano.
 - Colores de marca: rojo `#E11D2A`, negro `#0d0d0d` (definidos como variables al inicio de `styles.css`).
 - El sitio es responsivo (escritorio, tablet y móvil).
+
+---
+
+## Identidad 2026 (rama `nueva-identidad-2026`)
+
+- **Paleta:** Deep Black `#0A0A0A` · Blanco `#FFFFFF` · Dojo White `#F4F2EC` · Camel `#C9B299` · Concreto `#B7B7B5`
+- **Tipografía:** EB Garamond (títulos y frases) + Inter (datos, fechas, señalética) vía Google Fonts.
+- **Logos:** `assets/img/brand/` — wordmark, cinta y logo completo en negro y blanco (SVG transparente), `favicon.svg`.
+- **Fotos del dojo renovado:** `assets/img/dojo/` (01 El Dojo … 11 El Símbolo).
+- **Disciplinas:** las 10 del arte de muro (`assets/img/brand/arte-disciplinas-80x150.pdf`). MMA, Wrestling, Box, S&C, Recovery y Wellness aparecen con "Horario TBD" hasta tener horario.
+- **Pendiente:** foto real del programa Kids (hoy usa un render del dojo; ver `TODO` en `index.html`).
